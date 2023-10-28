@@ -20,9 +20,10 @@
           <input placeholder="ID" type="text" id="idInput" data-testid="idInput">
           <input placeholder="title" type="text" id="titleInput" data-testid="titleInput">
           <input placeholder="annualSalary" type="text" id="annualSalaryInput" data-testid="annualSalaryInput">
-          <button  data-testid="submitButton"id="submit-Button">Submit</button>
+          <!-- <button data-testid="submitButton"id="submit-Button">Submit</button> -->
         </form>
         
+        <form onsubmit="handleSubmit(event)"><button data-testid="submitButton" id="submit-Button">Submit</button> </form>
    
 </section>
       
@@ -48,7 +49,7 @@
 
 
   <footer class = "over-budget">
-    <p>Total Monthly: $<span id = "over-budget">20000</span></p>
+   <p id = "over-budget" >Total Monthly: $0 </p>
   </footer>
 </body>
 </html>

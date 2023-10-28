@@ -1,4 +1,4 @@
-let monthlycap = 200000
+let monthlycap = 0;
 
 
 function handleSubmit(event) {
@@ -23,7 +23,7 @@ function handleSubmit(event) {
     <td>${idInput.value}</td>
     <td>${titleInput.value}</td>
     <td>${annualSalary}</td>
-    <td><button onclick="deleteText(event)">❌</button></td>
+    <td><button onclick="deleteText(event)">delete</button></td>
      </tr>`
     
     //clear inputs 
@@ -34,15 +34,18 @@ function handleSubmit(event) {
     document.getElementById('annualSalaryInput').value = "";
   
 
-    monthlycap -= annualSalary / 12
+    monthlycap += annualSalary / 12
     console.log(monthlycap);
   
-   document.getElementById('over-budget').innerHTML -= annualSalary / 12;
+    document.getElementById('over-budget').innerHTML = "Total Monthly: $" + monthlycap 
 
-    if (monthlycap < 0 ) {
+    if (monthlycap > 20000 ) {
         console.log('under');
         document.getElementById('over-budget').style.color = "red"
-}
+    }
+    
+
+
     
    
    

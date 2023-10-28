@@ -6,9 +6,10 @@ table {
 table,
 th,
 td {
-    border: 1px solid black;
+    border: 1px solid rgb(0, 0, 0);
     border-collapse: collapse;
     height: 2.15em;
+   
 }
 
 th,
@@ -23,9 +24,32 @@ thead {
 }
 
 tbody tr:nth-child(odd) {
-    background: #fcfcfc;
+    background: #edebeb;
 }
 
 tbody tr:nth-child(even) {
-    background: #dcdcdc;
+    background: #ffffff;
+}
+
+button {
+    float:right;
+    width: 100px;
+    padding: .8em;
+    text-align: center;
+    
+}
+
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+header{
+    background-color: black;
+}
+
+th{
+    background-color: black;
+    border-color: #edebeb;
 }
