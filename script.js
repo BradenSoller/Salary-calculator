@@ -13,7 +13,7 @@ function handleSubmit(event) {
     let idInput = document.getElementById('idInput')
     let titleInput = document.getElementById('titleInput')
     let annualSalary = document.getElementById('annualSalaryInput').value;
-   
+  
 
     //output
     let table = document.getElementById('tableBody')
@@ -34,7 +34,7 @@ function handleSubmit(event) {
     document.getElementById('annualSalaryInput').value = "";
   
 
-    cap -= annualSalary / 12
+    monthlycap -= annualSalary / 12
     console.log(monthlycap);
   
    document.getElementById('over-budget').innerHTML -= annualSalary / 12;
