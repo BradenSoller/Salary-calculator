@@ -2,19 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <script src="script.js"></script>
   <link rel="stylesheet" href="style.css">
   <title>Salary Calculator</title>
-</head>
+</head> 
 <body>
   <header>
     <h1>Salary Calculator</h1>
   </header>
   <main>
+    <section>
     <h2>Add Employee</h2>
+     
+        <form onsubmit="handleSubmit(event)">
+          <input placeholder="firstName" type="text" id="firstNameInput" data-testid="firstNameInput">
+          <input placeholder="lastName" type="text" id="lastNameInput" data-testid="lastNameInput">
+          <input placeholder="ID" type="text" id="idInput" data-testid="idInput">
+          <input placeholder="title" type="text" id="titleInput" data-testid="titleInput">
+          <input placeholder="annualSalary" type="text" id="annualSalaryInput" data-testid="annualSalaryInput">
+          <button  data-testid="submitButton"id="submit-Button">Submit</button>
+        </form>
+        
+   
+</section>
+      
+  
+   
     <h2>Employees</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>firstName</th>
+          <th>lastName</th>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Annual Salary</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+
+      </tbody>
+    </table>
   </main>
-  <footer>
-    <p>Total Monthly</p>
+
+
+  <footer class = "over-budget">
+    <p>Total Monthly: $<span id = "over-budget">20000</span></p>
   </footer>
 </body>
 </html>
