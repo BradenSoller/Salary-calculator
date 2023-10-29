@@ -1,5 +1,5 @@
-let monthlycap = 0;
 
+let monthlycap = 0;
 
 function handleSubmit(event) {
     console.log('does this work ? no');
@@ -39,26 +39,23 @@ function handleSubmit(event) {
   
     document.getElementById('over-budget').innerHTML = "Total Monthly: $" + monthlycap 
 
+    
+    
+    
+   
     if (monthlycap > 20000 ) {
-        console.log('under');
+        console.log('over');
         document.getElementById('over-budget').style.color = "red"
     }
-    
-
-
-    
-   
    
 
 
-  
-
-   
 }
 
     //delete when button is clicked 
     function deleteText(event) {
-        event.target.parentElement.parentElement.remove();
+        event.target.parentElement.parentElement.remove('td');
+       
     }
    
 

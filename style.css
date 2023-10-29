@@ -34,7 +34,7 @@ tbody tr:nth-child(even) {
 button {
     float:right;
     width: 100px;
-    padding: .8em;
+    padding: .5%;
     text-align: center;
     
 }
@@ -46,10 +46,18 @@ h1 {
 }
 
 header{
-    background-color: black;
+    background-color: rgb(63, 62, 62);
 }
 
 th{
     background-color: black;
     border-color: #edebeb;
+    
 }
+
+body {
+    background: linear-gradient(145deg, #fcfcfc, #080000);
+}
+ inputs{
+    width: fit-content;
+ }
